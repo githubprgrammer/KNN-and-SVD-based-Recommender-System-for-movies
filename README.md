@@ -36,7 +36,7 @@ MAE of combined: 0.7421
 MAE of random: 1.2294
 ```
 
-##Evaluation
+## Evaluation
 As we can observe, the SVD model outperforms KNN and the random predictor in all metrics. It has the smallest RMSE, MAE and recall and the highest precision. The KNN model is nearly as good as SVD. SVD is just 3.95 % better in RMSE, 3.99% better in MAE. Furthermore, SVD has a 3.94% higher precision and a 5.69 % better recall rate. Of course, both, KNN and SVD, are much better than the random prediction model. KNN for example has a 37.28% smaller MAE and a 36.14 % smaller RMSE than the random predictor, which is enormous. It should also be noted, that the difference for MAE and the difference for RMSE between the models is almost the same. For example, SVD is around 4% better in RMSE (the exact value is 3.95% as stated before) as well as in MAE (3.99%) than KNN. And KNN is around 36% better in RMSE and MAE than the random predictor. This closeness between RMSE and MAE may indicate, that these metrics are very similar and that one does not get any additional information by applying both metrics.
 
 Now let us compare our combined model with the other models. Since SVD is the best of the single models, it is sufficient to just compare SVD with the combined model. In regard to RMSE, the combined approach is only 0.245% better than the SVD model. For MAE however, it’s the opposite, here the SVD model is 0.256% better than the combined approach. Regarding precision SVD has a 0.126% higher precision that the combined model. Also the recall rate of the SVD algorithm is 0.7% higher than that of the combined algorithm.
