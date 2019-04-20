@@ -2,7 +2,7 @@
 In this project we will analyze the Movielens 100k Dataset which consists of 100.000 ratings from 1000 users on 1700 movies. All users in this dataset have at least rated 20 movies. Apart from this information, simple demographic information for the users like age, gender, occupation is included. The dataset can be obtained on the following permalink: http://grouplens.org/datasets/movielens/100k/
 
 We will use a **hybrid collaborative filtering approach** where we will combine the results of the **K Nearest Neighbor** algorithm and the **model-based SVD algorithm** to predict the movie ratings of the users. The advantage of the collaborative filtering algorithms is that no knowledge about item features is needed. So we can ignore the movie tags and the
-demographic information and concentrate on the users and their ratings. We will evaluate the hybrid model to see if a combination between a modelbased (SVD) and a memory-based (KNN) approach delivers better results than the approaches on their own.
+demographic information and concentrate on the users and their ratings. We will evaluate the hybrid model to see if a combination between a modelbased (SVD) and a memory-based (KNN) approach delivers better results than each of the approaches on their own.
 
 ## Implementation
 For the implementation of this project we have used “surprise” a Python scikit for recommender systems. It has predefined all major recommendation algorithms such as KNN, SVD, SVD++. We created a new hybrid algorithm by combining the results of KNN and SVD. On http://surpriselib.com/ you have access to the surprise library.
